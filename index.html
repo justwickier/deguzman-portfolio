@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Digital Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaquery.css">
     <link rel="stylesheet" href="tailwindcss.css">
 </head>
-<body>
+<body class="font-sans">
+    <!-- p are text-slate-600 -->
+    <!-- a and btn are duration-300 transition-all ease -->
+    <!-- nav and class link-nav are flex  -->
+    <!-- nav are justify-around items-center style:height: 17vh  -->
+    <!-- link-nav are gap-8 list-none (font-size: 1.5rem or text-2xl if what's better) -->
+    <!-- a are text-black no-underline hover:duration-300 hover:text-slate-500 hover:underline hover:underline-offset-8 hover:decoration-slate-400 -->
+    <!-- div class logo are text-2xl cursor-default -->
+    <nav id="pc-nav" class="flex justify-around items-center" style="height:17vh;">
+        <div class="logo text-2xl cursor-default">Christian Erick D De Guzman</div>
+        <div>
+            <ul class="link-nav flex gap-8 list-none" style="font-size: 1.25rem;">
+                <li><a href="#about" class="duration-300 transition-all ease text-black no-underline hover:duration-300 hover:text-slate-500 hover:underline hover:underline-offset-8 hover:decoration-slate-400">About Me</a></li>
+                <li><a href="#experience" class="duration-300 transition-all ease text-black no-underline hover:duration-300 hover:text-slate-500 hover:underline hover:underline-offset-8 hover:decoration-slate-400">Experiences</a></li>
+                <li><a href="#project" class="duration-300 transition-all ease text-black no-underline hover:duration-300 hover:text-slate-500 hover:underline hover:underline-offset-8 hover:decoration-slate-400">Projects</a></li>
+                <li><a href="#contact" class="duration-300 transition-all ease text-black no-underline hover:duration-300 hover:text-slate-500 hover:underline hover:underline-offset-8 hover:decoration-slate-400">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     <script src="script.js"></script>
 </body>
 </html>
